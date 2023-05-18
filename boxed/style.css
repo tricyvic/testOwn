@@ -19,19 +19,32 @@ body{
     gap: 8pc;
     list-style: none;
 }
-.nav ul a{
+.nav ul a,.sectioned a{
     text-decoration: none;
+    color: rgb(255, 0, 144);
     
 }
-
-.just{
-    background-color: bisque;
-    width: 100%;
+.sections{
     display: flex;
-    justify-content: space-between;
+}
+.side-bar{
+    color: aliceblue;
+    background-color: black;
+    height: 100vh;
+    flex: 1;
+    font-size: 25px;
+}
+.sectioned{
+    display: flex;
     align-items: center;
 }
+.sectioned img{
+    height: 4pc;
+    width: 4pc;
+    border-radius: 50%;
+}
 .section{
+    flex: 6;
     height: 100vh;
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -51,8 +64,7 @@ body{
 .section div:hover{
     box-shadow:12px 12px 12px grey;
 }
-    
 
-.footer{
-    background-color: green;
+#footer{
+    background-color: aqua;
 }
